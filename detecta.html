@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Detecta tu Adicción</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Adicciones Online</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="detecta.html">¿Estás en riesgo?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="desventajas.html">Desventajas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2 class="mt-5">TEST DE LUDOPATIA</h2>
+        <form id="quiz" class="mt-4">
+            <div class="form-group">
+                <label>1. ¿juegas normalmente en casinos online?</label>
+                <select class="form-control" id="q1">
+                    <option value="0">No</option>
+                    <option value="1">Sí</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>2. ¿Te sientes ansioso si no puedes jugar?</label>
+                <select class="form-control" id="q2">
+                    <option value="0">No</option>
+                    <option value="1">Sí</option>
+                </select>
+            </div>
+                    <div class="form-group">
+                        <label>3. ¿Juegas más de 2 horas al día?</label>
+                        <select class="form-control" id="q3">
+                            <option value="0">No</option>
+                            <option value="1">Sí</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>4. ¿Miras videos de casinos como entretenimiento?</label>
+                        <select class="form-control" id="q4">
+                            <option value="0">No</option>
+                            <option value="1">Sí</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>5. ¿Alguna ves has llorado por apuestas online?</label>
+                        <select class="form-control" id="q5">
+                            <option value="0">No</option>
+                            <option value="1">Sí</option>
+                        </select>
+                    </div>
+           
+           
+           
+           
+            <button type="button" class="btn btn-primary" onclick="checkAddiction()">Enviar</button>
+        </form>
+        <div id="result" class="mt-4"></div>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Adicciones Online. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
